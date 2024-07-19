@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix RREF Solver with Steps</title>
+  <style>
+    .matrix-input { margin-bottom: 10px; }
+    table { margin-top: 10px; border-collapse: collapse; }
+    td, th { border: 1px solid black; padding: 5px; }
+    .steps { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Matrix RREF Solver with Steps</h1>
+
+  <!-- 2x2 Matrix Section -->
+  <h2>2x2 Matrix</h2>
+  <div class="matrix-input">
+    <label for="a11">a11:</label>
+    <input type="number" id="a11">
+    <label for="a12">a12:</label>
+    <input type="number" id="a12">
+    <br>
+    <label for="a21">a21:</label>
+    <input type="number" id="a21">
+    <label for="a22">a22:</label>
+    <input type="number" id="a22">
+    <br>
+    <button onclick="findRREF2x2()">Find RREF 2x2</button>
+    <div id="rrefResult2x2"></div>
+    <div id="steps2x2" class="steps"></div>
+  </div>
+
+  <!-- 3x3 Matrix Section -->
+  <h2>3x3 Matrix</h2>
+  <div class="matrix-input">
+    <label for="a31">a11:</label>
+    <input type="number" id="a31">
+    <label for="a32">a12:</label>
+    <input type="number" id="a32">
+    <label for="a33">a13:</label>
+    <input type="number" id="a33">
+    <br>
+    <label for="a41">a21:</label>
+    <input type="number" id="a41">
+    <label for="a42">a22:</label>
+    <input type="number" id="a42">
+    <label for="a43">a23:</label>
+    <input type="number" id="a43">
+    <br>
+    <label for="a51">a31:</label>
+    <input type="number" id="a51">
+    <label for="a52">a32:</label>
+    <input type="number" id="a52">
+    <label for="a53">a33:</label>
+    <input type="number" id="a53">
+    <br>
+    <button onclick="findRREF3x3()">Find RREF 3x3</button>
+    <div id="rrefResult3x3"></div>
+    <div id="steps3x3" class="steps"></div>
+  </div>
+
+  <script src="matrixSolver.js"></script>
+</body>
+</html>

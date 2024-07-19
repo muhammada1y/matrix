@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Solver</title>
+  <style>
+    .matrix-input { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Matrix Solver</h1>
+
+  <!-- 2x2 Matrix Section -->
+  <h2>2x2 Matrix</h2>
+  <div class="matrix-input">
+    <label for="a11">a11:</label>
+    <input type="number" id="a11">
+    <label for="a12">a12:</label>
+    <input type="number" id="a12">
+    <br>
+    <label for="a21">a21:</label>
+    <input type="number" id="a21">
+    <label for="a22">a22:</label>
+    <input type="number" id="a22">
+    <br>
+    <button onclick="findDeterminant2x2()">Find Determinant 2x2</button>
+    <p id="detResult2x2"></p>
+  </div>
+
+  <div class="matrix-input">
+    <label for="b1">b1:</label>
+    <input type="number" id="b1">
+    <label for="b2">b2:</label>
+    <input type="number" id="b2">
+    <br>
+    <button onclick="solveSystem2x2()">Solve System 2x2</button>
+    <p id="solutionResult2x2"></p>
+  </div>
+
+  <!-- 3x3 Matrix Section -->
+  <h2>3x3 Matrix</h2>
+  <div class="matrix-input">
+    <label for="a31">a11:</label>
+    <input type="number" id="a31">
+    <label for="a32">a12:</label>
+    <input type="number" id="a32">
+    <label for="a33">a13:</label>
+    <input type="number" id="a33">
+    <br>
+    <label for="a41">a21:</label>
+    <input type="number" id="a41">
+    <label for="a42">a22:</label>
+    <input type="number" id="a42">
+    <label for="a43">a23:</label>
+    <input type="number" id="a43">
+    <br>
+    <label for="a51">a31:</label>
+    <input type="number" id="a51">
+    <label for="a52">a32:</label>
+    <input type="number" id="a52">
+    <label for="a53">a33:</label>
+    <input type="number" id="a53">
+    <br>
+    <button onclick="findDeterminant3x3()">Find Determinant 3x3</button>
+    <p id="detResult3x3"></p>
+  </div>
+
+  <div class="matrix-input">
+    <label for="c1">b1:</label>
+    <input type="number" id="c1">
+    <label for="c2">b2:</label>
+    <input type="number" id="c2">
+    <label for="c3">b3:</label>
+    <input type="number" id="c3">
+    <br>
+    <button onclick="solveSystem3x3()">Solve System 3x3</button>
+    <p id="solutionResult3x3"></p>
+  </div>
+
+  <script src="matrixSolver.js"></script>
+</body>
+</html>
